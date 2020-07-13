@@ -13,7 +13,7 @@ public class Task1_5 {
         String[] fluits = {"みかん","りんご","ぶどう","メロン"};
 
         // ② for文を使って①で作成した配列を出力しなさい。
-        for(int i = 0; i <= 4; i++ ){
+        for(int i = 0; i <= 3; i++ ){
             System.out.println(fluits[i]);
         }
 
@@ -41,19 +41,13 @@ public class Task1_5 {
         *     8 || 8 | 16 | 24 | 32 | 40 | 48 | 56 | 64 | 72 |
         *     9 || 9 | 18 | 27 | 36 | 45 | 54 | 63 | 72 | 81 |
         */
-        
-        /*for(int j = 1;j <=9;j++){
-            System.out.println("||"+ " " + i * j);
+        for(i =1; i <= 9; i ++){
+            System.out.print(i + " " + "||");
+            for(int j = 1; j <= 9 ; j++ ){
+                 System.out.print(" " + (i * j) + " " + "|");
         }
-            System.out.println();
-        }*/
-            // １つの段を表示 
-            for (int j = 1; j <= 9; j++) { 
-               System.out.print(i + "×" + j + "＝" + (i * j) + " "); 
-            } 
-            // １つの段を表示し終わったところで、改行する 
-            System.out.println(); 
-         }
-        
-
+                 System.out.println();
         }
+        }
+        }
+        
